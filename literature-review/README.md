@@ -29,7 +29,8 @@ literature-review/
 
 - Si el método no encaja en ninguna función existente, se crea una nueva sección de función.
 - Se actualiza la tabla de contenido del notebook (y la de este README).
-- Cada método incluye, en este orden: **Concepto**, **Descripción del procedimiento**, **Fórmulas** (LaTeX en celdas Markdown; debajo, el significado de cada símbolo y la fórmula en palabras), **Código**, **Gráficas**, **Fortalezas y debilidades** y **Uso en la literatura**.
+- Cada método se explica como una **narrativa con orden lógico** (problema → idea central → formulación paso a paso → caso que lo rompe → requisitos previos → aplicación a puentes → síntesis), no en bloques separados: en cada paso van juntas la explicación, la fórmula en LaTeX (con el significado de cada símbolo y la descripción en palabras), el código, la gráfica y su interpretación. El detalle está en [`metodos/prompt_explicar_metodos.md`](metodos/prompt_explicar_metodos.md).
+- Los widgets interactivos (`ipywidgets`) van acompañados de una gráfica estática equivalente, porque GitHub no los muestra. Semilla fija para cualquier dato aleatorio.
 - Texto explicativo en español; código (variables y comentarios) en inglés, con datos de ejemplo.
 - Antes de hacer commit se ejecuta el notebook completo para que las gráficas queden guardadas:
 
