@@ -21,6 +21,7 @@ literature-review/
 | Autores | Año | Título corto |
 |---|---|---|
 | Malekjafarian y OBrien | 2017 | Uso de un vehículo que pasa para estimar las formas modales de un puente |
+| Mei et al. | 2021 | Formas modales con vehículos a velocidad de tráfico mediante completado de matrices dispersas |
 
 ## Notebook de métodos
 
