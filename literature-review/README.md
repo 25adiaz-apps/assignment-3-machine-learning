@@ -31,6 +31,7 @@ literature-review/
 | 0. Fundamentos: señal, forma modal y amplitud | Concepto base (no es un método) |
 | 1. Descomposición de señales | 1.1 EMD (Empirical Mode Decomposition) |
 | 2. Envolvente de amplitud / amplitud instantánea | 2.1 Transformada de Hilbert |
+| 3. Sensado disperso | 3.1 Mapeo a puntos fijos virtuales |
 
 ### Flujo para agregar un método
 
