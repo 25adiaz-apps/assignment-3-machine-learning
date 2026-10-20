@@ -6,7 +6,7 @@ Material de apoyo para la revisión de literatura.
 literature-review/
 └── metodos/
     ├── metodos.ipynb      Explicación de los métodos que aparecen en los artículos revisados
-    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib)
+    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
     └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
 ```
 
@@ -16,7 +16,8 @@ literature-review/
 
 | Función | Método |
 |---|---|
-| 1. Envolvente de amplitud / amplitud instantánea | 1.1 Transformada de Hilbert |
+| 1. Descomposición de señales | 1.1 EMD (Empirical Mode Decomposition) |
+| 2. Envolvente de amplitud / amplitud instantánea | 2.1 Transformada de Hilbert |
 
 ### Flujo para agregar un método
 
