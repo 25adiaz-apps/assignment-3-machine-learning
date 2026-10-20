@@ -9,12 +9,14 @@ literature-review/
 │   ├── requirements.txt      Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
 │   └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
 └── revision-papers/          Resumen de cada artículo de la revisión (qué hicieron, cómo y para qué usaron cada método)
-    └── resumenes_papers.ipynb
+    ├── resumenes_papers.ipynb
+    ├── figuras/              Esquemas propios de cada artículo, en PNG
+    └── requirements.txt      Librerías del notebook (numpy, matplotlib)
 ```
 
 ## Resúmenes de artículos
 
-[`revision-papers/resumenes_papers.ipynb`](revision-papers/resumenes_papers.ipynb) tiene un resumen por artículo (sección de nivel 1 con ancla y tabla de contenido arriba): referencia, problema, pregunta, configuración y procedimiento paso a paso (con las figuras del artículo), tabla de métodos y propósito, validación, limitaciones y conclusiones. Solo Markdown; no explica cómo funciona cada método, sino que enlaza al notebook de métodos con rutas relativas (`../metodos/metodos.ipynb#ancla`).
+[`revision-papers/resumenes_papers.ipynb`](revision-papers/resumenes_papers.ipynb) tiene un resumen por artículo (sección de nivel 1 con ancla y tabla de contenido arriba): referencia, problema, pregunta, configuración y procedimiento paso a paso (citando las figuras del artículo), tabla de métodos y propósito, validación, limitaciones y conclusiones. Las figuras son esquemas propios generados con matplotlib (no copias de las del artículo) y se guardan también en `revision-papers/figuras/`. No explica cómo funciona cada método, sino que enlaza al notebook de métodos con rutas relativas (`../metodos/metodos.ipynb#ancla`).
 
 | Autores | Año | Título corto |
 |---|---|---|
