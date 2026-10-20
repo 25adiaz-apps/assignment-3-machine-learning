@@ -4,11 +4,21 @@ Material de apoyo para la revisión de literatura.
 
 ```
 literature-review/
-└── metodos/
-    ├── metodos.ipynb      Explicación de los métodos que aparecen en los artículos revisados
-    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
-    └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
+├── metodos/                  Explicación conceptual de cada método (qué es, cómo funciona, ejemplos con código y gráficas)
+│   ├── metodos.ipynb
+│   ├── requirements.txt      Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
+│   └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
+└── revision-papers/          Resumen de cada artículo de la revisión (qué hicieron, cómo y para qué usaron cada método)
+    └── resumenes_papers.ipynb
 ```
+
+## Resúmenes de artículos
+
+[`revision-papers/resumenes_papers.ipynb`](revision-papers/resumenes_papers.ipynb) tiene un resumen por artículo (sección de nivel 1 con ancla y tabla de contenido arriba): referencia, problema, pregunta, configuración y procedimiento paso a paso (con las figuras del artículo), tabla de métodos y propósito, validación, limitaciones y conclusiones. Solo Markdown; no explica cómo funciona cada método, sino que enlaza al notebook de métodos con rutas relativas (`../metodos/metodos.ipynb#ancla`).
+
+| Autores | Año | Título corto |
+|---|---|---|
+| Malekjafarian y OBrien | 2017 | Uso de un vehículo que pasa para estimar las formas modales de un puente |
 
 ## Notebook de métodos
 
