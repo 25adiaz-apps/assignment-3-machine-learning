@@ -1,0 +1,6 @@
+numpy
+scipy
+matplotlib
+EMD-signal   # PyEMD (from PyEMD import EMD)
+jupyterlab
+ipykernel
