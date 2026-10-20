@@ -33,6 +33,7 @@ literature-review/
 | 2. Envolvente de amplitud / amplitud instantánea | 2.1 Transformada de Hilbert |
 | 3. Sensado disperso | 3.1 Mapeo a puntos fijos virtuales |
 | | 3.2 Completado de matrices: soft imputing |
+| 4. Identificación modal | 4.1 SVD para extraer formas modales |
 
 ### Flujo para agregar un método
 
