@@ -6,7 +6,7 @@ Material de apoyo para la revisión de literatura.
 literature-review/
 └── metodos/
     ├── metodos.ipynb      Explicación de los métodos que aparecen en los artículos revisados
-    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
+    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, ipywidgets, EMD-signal)
     └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
 ```
 
