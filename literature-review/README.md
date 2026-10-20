@@ -23,6 +23,13 @@ literature-review/
 | Malekjafarian y OBrien | 2017 | Uso de un vehículo que pasa para estimar las formas modales de un puente |
 | Mei et al. | 2021 | Formas modales con vehículos a velocidad de tráfico mediante completado de matrices dispersas |
 
+**Regla para cada artículo nuevo** en `resumenes_papers.ipynb`:
+
+- (a) Tener al inicio de su encabezado un ancla `<a id="apellido-año"></a>` (por ejemplo, `<a id="mei-2021"></a>`). No cambiar los ids existentes, porque otros documentos los enlazan.
+- (b) Agregarse al **Índice** (celda `## Índice`, ancla `#indice`) en el mismo orden en que aparece en el cuaderno, con el formato `N. [Autor (año) — título corto](#apellido-año)`.
+- (c) Ir separado del artículo anterior con una celda Markdown que contenga solo `---`.
+- (d) Terminar con la línea `[↑ Volver al índice](#indice)`.
+
 ## Notebook de métodos
 
 [`metodos/metodos.ipynb`](metodos/metodos.ipynb) organiza los métodos **por función**: cada función es una sección de nivel 1 y cada método una subsección dentro de ella. Al inicio hay una tabla de contenido con todas las funciones y métodos.
