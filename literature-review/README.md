@@ -6,7 +6,7 @@ Material de apoyo para la revisión de literatura.
 literature-review/
 └── metodos/
     ├── metodos.ipynb      Explicación de los métodos que aparecen en los artículos revisados
-    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, ipywidgets, EMD-signal)
+    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib)
     └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
 ```
 
@@ -16,8 +16,7 @@ literature-review/
 
 | Función | Método |
 |---|---|
-| 1. Descomposición de señales | 1.1 EMD (Empirical Mode Decomposition) |
-| 2. Envolvente de amplitud / amplitud instantánea | 2.1 Transformada de Hilbert |
+| 1. Envolvente de amplitud / amplitud instantánea | 1.1 Transformada de Hilbert |
 
 ### Flujo para agregar un método
 
@@ -29,8 +28,9 @@ literature-review/
 
 - Si el método no encaja en ninguna función existente, se crea una nueva sección de función.
 - Se actualiza la tabla de contenido del notebook (y la de este README).
-- Cada método se explica como una **narrativa con orden lógico** (problema → idea central → formulación paso a paso → caso que lo rompe → requisitos previos → aplicación a puentes → síntesis), no en bloques separados: en cada paso van juntas la explicación, la fórmula en LaTeX (con el significado de cada símbolo y la descripción en palabras), el código, la gráfica y su interpretación. El detalle está en [`metodos/prompt_explicar_metodos.md`](metodos/prompt_explicar_metodos.md).
-- Los widgets interactivos (`ipywidgets`) van acompañados de una gráfica estática equivalente, porque GitHub no los muestra. Semilla fija para cualquier dato aleatorio.
+- **Nivel de detalle conceptual:** el objetivo es tener claro el concepto, no un tratamiento exhaustivo. Unas 10–12 celdas por método, máximo 3–4 gráficas, sin widgets ni deducciones salvo que se pidan.
+- Cada método se explica como una **narrativa corta con orden lógico** (para qué sirve → idea central con su fórmula y gráfica → requisitos o limitación principal → aplicación a puentes → tabla de fortalezas y debilidades), no en bloques separados: en cada paso van juntas la explicación, la fórmula en LaTeX (con el significado de cada símbolo y la descripción en palabras), el código, la gráfica y su interpretación. El detalle está en [`metodos/prompt_explicar_metodos.md`](metodos/prompt_explicar_metodos.md).
+- Semilla fija para cualquier dato aleatorio.
 - Texto explicativo en español; código (variables y comentarios) en inglés, con datos de ejemplo.
 - Antes de hacer commit se ejecuta el notebook completo para que las gráficas queden guardadas:
 

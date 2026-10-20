@@ -16,6 +16,9 @@ Cuando te pida que me expliques un método, sigue este flujo.
 
 Cuando te diga que ya terminamos con el método, dame un prompt completo para Claude Code que agregue ese método al notebook `literature-review/metodos/metodos.ipynb` de mi repositorio "assigment 3" y haga commit y push a GitHub.
 
+### Nivel de detalle
+Nivel de detalle: conceptual. El objetivo es tener claro el concepto del método, no un tratamiento exhaustivo. Unas 10–12 celdas, máximo 3–4 gráficas, sin widgets ni deducciones salvo que yo lo pida.
+
 ### Ubicación
 - Indicar en qué **sección de función** va el método (por ejemplo: Descomposición de señales, Envolvente de amplitud, Identificación modal, Separación de la respuesta del puente, Reconstrucción con datos dispersos, Cuantificación de incertidumbre). Si no encaja en una existente, indicar que se cree una nueva.
 - Indicar que se actualice la tabla de contenido.
@@ -28,24 +31,22 @@ El método se explica como una secuencia lógica de pasos, del problema a la apl
 - la gráfica que la muestra;
 - una celda Markdown corta que interpreta lo que se ve en la gráfica.
 
-Orden lógico típico (adaptar a cada método):
-1. El problema que resuelve el método y por qué las herramientas más simples no bastan.
-2. La idea central, mostrada con el caso más simple.
-3. La formulación matemática, construida paso a paso, cada fórmula con su código y su gráfica.
-4. Hasta dónde funciona: el caso que lo rompe.
-5. Qué hay que hacer con la señal antes (requisitos previos) y cómo se resuelve el caso que lo rompía.
-6. Aplicación a señales reales de puentes y cómo lo usan los artículos de mi revisión.
-7. Cierre de síntesis: tabla de requisitos, fortalezas y debilidades, relación con otros métodos y uso en la literatura.
+Orden lógico (adaptar a cada método):
+1. **Para qué sirve:** dos o tres líneas sobre qué resuelve el método y por qué las herramientas más simples no bastan.
+2. **Idea central** con su fórmula y su gráfica.
+3. **Requisitos o limitación principal** (qué debe cumplir la señal o en qué caso falla), con su gráfica si ayuda.
+4. **Aplicación a puentes**, y en qué artículos de mi revisión aparece y cómo lo usan.
+5. **Tabla de fortalezas y debilidades.**
 
 ### Herramientas del notebook a usar
 - Encabezados jerárquicos y anclas para la tabla de contenido.
 - LaTeX en línea y en bloque.
 - Tablas Markdown para comparaciones y resúmenes.
 - Recuadros de nota o advertencia para requisitos y errores comunes (blockquote con ícono o `<div>` HTML con borde).
-- Bloques plegables (`<details><summary>`) para deducciones largas u opcionales.
+- Bloques plegables (`<details><summary>`) solo si pido deducciones.
 - Funciones auxiliares definidas una vez y reutilizadas en las celdas siguientes, para no repetir código.
 - Gráficas con subplots cuando se comparan casos lado a lado.
-- Widgets interactivos (`ipywidgets.interact`) para ver el efecto de los parámetros. Como GitHub no renderiza widgets, cada widget debe ir acompañado de una gráfica estática equivalente que muestre varios valores del parámetro.
+- Widgets interactivos (`ipywidgets.interact`) solo si los pido. Como GitHub no renderiza widgets, cada widget debe ir acompañado de una gráfica estática equivalente que muestre varios valores del parámetro.
 
 ### Contenido obligatorio
 - Todo autocontenido, sin depender de esta conversación.

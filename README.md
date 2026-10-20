@@ -27,7 +27,7 @@ requirements.txt                  Librerías generales para correr los notebooks
 
 ### Revisión de literatura
 
-[`literature-review/metodos/metodos.ipynb`](literature-review/metodos/metodos.ipynb) reúne las explicaciones de los métodos que aparecen en los artículos de la revisión, organizados por función (p. ej. *Descomposición de señales → EMD*, *Envolvente de amplitud → Transformada de Hilbert*). Ver [`literature-review/README.md`](literature-review/README.md) para las convenciones.
+[`literature-review/metodos/metodos.ipynb`](literature-review/metodos/metodos.ipynb) reúne las explicaciones de los métodos que aparecen en los artículos de la revisión, organizados por función (p. ej. *Envolvente de amplitud → Transformada de Hilbert*), con un nivel de detalle conceptual. Ver [`literature-review/README.md`](literature-review/README.md) para las convenciones.
 
 ### Cómo agregar contenido nuevo
 
