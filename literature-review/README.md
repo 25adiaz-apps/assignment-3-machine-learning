@@ -6,7 +6,8 @@ Material de apoyo para la revisión de literatura.
 literature-review/
 └── metodos/
     ├── metodos.ipynb      Explicación de los métodos que aparecen en los artículos revisados
-    └── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
+    ├── requirements.txt   Librerías del notebook (numpy, scipy, matplotlib, EMD-signal)
+    └── prompt_explicar_metodos.md   Instrucciones para el chat de Claude: explicar un método y generar el prompt para agregarlo al notebook
 ```
 
 ## Notebook de métodos
@@ -17,6 +18,12 @@ literature-review/
 |---|---|
 | 1. Descomposición de señales | 1.1 EMD (Empirical Mode Decomposition) |
 | 2. Envolvente de amplitud / amplitud instantánea | 2.1 Transformada de Hilbert |
+
+### Flujo para agregar un método
+
+1. En un chat con Claude, pegar las instrucciones de [`metodos/prompt_explicar_metodos.md`](metodos/prompt_explicar_metodos.md) y pedir la explicación del método.
+2. Al terminar, Claude entrega un prompt para Claude Code.
+3. Ese prompt se le da a Claude Code, que agrega el método al notebook, lo ejecuta y hace commit y push.
 
 ### Convenciones para agregar un método
 
