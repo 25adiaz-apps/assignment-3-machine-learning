@@ -16,12 +16,13 @@ literature-review/
 
 ## Resúmenes de artículos
 
-[`revision-papers/resumenes_papers.ipynb`](revision-papers/resumenes_papers.ipynb) tiene un resumen por artículo (sección de nivel 1 con ancla y tabla de contenido arriba): referencia, problema, pregunta, configuración y procedimiento paso a paso (citando las figuras del artículo), tabla de métodos y propósito, validación, limitaciones y conclusiones. Las figuras son esquemas propios generados con matplotlib (no copias de las del artículo) y se guardan también en `revision-papers/figuras/`. No explica cómo funciona cada método, sino que enlaza al notebook de métodos con rutas relativas (`../metodos/metodos.ipynb#ancla`).
+[`revision-papers/resumenes_papers.ipynb`](revision-papers/resumenes_papers.ipynb) tiene un resumen por artículo (sección de nivel 1 con ancla e índice arriba): referencia, problema, pregunta, configuración y procedimiento paso a paso (citando las figuras del artículo), tabla de métodos y propósito, validación, limitaciones y conclusiones. Las figuras son esquemas propios generados con matplotlib (no copias de las del artículo) y se guardan también en `revision-papers/figuras/`. No explica cómo funciona cada método, sino que enlaza al notebook de métodos con rutas relativas (`../metodos/metodos.ipynb#ancla`).
 
 | Autores | Año | Título corto |
 |---|---|---|
 | Malekjafarian y OBrien | 2017 | Uso de un vehículo que pasa para estimar las formas modales de un puente |
 | Mei et al. | 2021 | Formas modales con vehículos a velocidad de tráfico mediante completado de matrices dispersas |
+| Talebi-Kalaleh et al. | 2025 | Monitoreo por crowdsensing con una red dispersa de sensores móviles aleatorios |
 
 **Regla para cada artículo nuevo** en `resumenes_papers.ipynb`:
 
